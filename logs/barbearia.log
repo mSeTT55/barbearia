@@ -1,0 +1,37 @@
+2024-08-25T00:40:15.929Z  INFO 1 --- [barbearia] [main] s.barbearia.BarbeariaApplication         : Starting BarbeariaApplication v0.0.1 using Java 22 with PID 1 (/barbearia/app.jar started by root in /barbearia)
+2024-08-25T00:40:15.932Z  INFO 1 --- [barbearia] [main] s.barbearia.BarbeariaApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T00:40:16.586Z  INFO 1 --- [barbearia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T00:40:16.634Z  INFO 1 --- [barbearia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-08-25T00:40:17.058Z  INFO 1 --- [barbearia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-25T00:40:17.072Z  INFO 1 --- [barbearia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T00:40:17.072Z  INFO 1 --- [barbearia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-25T00:40:17.099Z  INFO 1 --- [barbearia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T00:40:17.100Z  INFO 1 --- [barbearia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1110 ms
+2024-08-25T00:40:17.267Z  INFO 1 --- [barbearia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T00:40:17.318Z  INFO 1 --- [barbearia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-25T00:40:17.346Z  INFO 1 --- [barbearia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T00:40:17.555Z  INFO 1 --- [barbearia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T00:40:17.572Z  INFO 1 --- [barbearia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T00:40:17.772Z  INFO 1 --- [barbearia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77fc19cf
+2024-08-25T00:40:17.774Z  INFO 1 --- [barbearia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T00:40:17.826Z  WARN 1 --- [barbearia] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-25T00:40:18.418Z  INFO 1 --- [barbearia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T00:40:18.494Z  INFO 1 --- [barbearia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T00:40:18.765Z  WARN 1 --- [barbearia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T00:40:19.240Z  INFO 1 --- [barbearia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-25T00:40:19.255Z  INFO 1 --- [barbearia] [main] s.barbearia.BarbeariaApplication         : Started BarbeariaApplication in 3.799 seconds (process running for 4.245)
+2024-08-25T00:40:47.276Z  INFO 1 --- [barbearia] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T00:40:47.276Z  INFO 1 --- [barbearia] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T00:40:47.278Z  INFO 1 --- [barbearia] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-25T00:40:47.301Z  INFO 1 --- [barbearia] [http-nio-8080-exec-1] s.b.controller.ServicesController        :  List<Services>:getAllServices 'Pegar todos os serviços está em execução.' 
+2024-08-25T00:40:49.266Z  INFO 1 --- [barbearia] [http-nio-8080-exec-2] s.b.controller.ServicesController        : createServices 'Criar serviços está em execução.' 
+2024-08-25T00:40:49.378Z  INFO 1 --- [barbearia] [http-nio-8080-exec-3] s.b.controller.ServicesController        : createServices 'Criar serviços está em execução.' 
+2024-08-25T00:40:49.537Z  INFO 1 --- [barbearia] [http-nio-8080-exec-4] s.b.controller.ServicesController        : createServices 'Criar serviços está em execução.' 
+2024-08-25T00:40:49.647Z  INFO 1 --- [barbearia] [http-nio-8080-exec-5] s.b.controller.ServicesController        : createServices 'Criar serviços está em execução.' 
+2024-08-25T00:40:49.912Z  INFO 1 --- [barbearia] [http-nio-8080-exec-6] s.b.controller.ServicesController        : createServices 'Criar serviços está em execução.' 
+2024-08-25T00:40:50.097Z  INFO 1 --- [barbearia] [http-nio-8080-exec-7] s.b.controller.ServicesController        : createServices 'Criar serviços está em execução.' 
+2024-08-25T00:40:52.200Z  INFO 1 --- [barbearia] [http-nio-8080-exec-8] s.b.controller.ServicesController        :  List<Services>:getAllServices 'Pegar todos os serviços está em execução.' 
+2024-08-25T00:40:53.643Z  INFO 1 --- [barbearia] [http-nio-8080-exec-9] s.b.controller.ServicesController        :  List<Services>:getAllServices 'Pegar todos os serviços está em execução.' 
+2024-08-25T03:01:46.239Z  INFO 1 --- [barbearia] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T03:01:46.453Z  INFO 1 --- [barbearia] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T03:01:46.478Z  INFO 1 --- [barbearia] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

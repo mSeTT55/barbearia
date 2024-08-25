@@ -11,6 +11,8 @@ services:
       - SPRING_DATASOURCE_PASSWORD=password
     ports:
       - 8080:8080
+    volumes:
+      - ./logs:/logs
 
   postgres:
     image: postgres:16
@@ -22,6 +24,19 @@ services:
     ports:
       - 5432:5432
 
+  splunk:
+    container_name: splunk
+    image: splunk/splunk:latest
+    environment:
+      SPLUNK_START_ARGS: --accept-license
+      SPLUNK_USER: splunk
+      SPLUNK_PASSWORD: PASSWORD
+    ports:
+      - 8002:8000
+    volumes:
+      - ./logs:/logs
+
+
 volumes:
   postgres-db-volume:
     driver: local
@@ -29,3 +44,4 @@ volumes:
       type: none
       o: bind
       device: ./postgresql
+  log_volume:
